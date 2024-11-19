@@ -1,0 +1,171 @@
+/*22490352: FUENTES CHAVEZ YESSICA*/
+/*ESTILO GENERAL PARA TODOS LOS ELEMENTOS */
+* 
+{
+  font-size: 15px; /*TAMAÑO DE FUENTE POR DEFECTO*/
+  font-family: monospace; /*FUENTE DE TEXTO*/
+}
+/*ESTILOS GENERALES PARA EL BODY*/
+body 
+{
+  font-family: monospace; /*FUENTE DEL TEXTO*/
+  margin: 0; /*SIN MÁRGENES*/
+  padding: 0; /*SIN RELLENO*/
+  color: #ff6666; /*COLOR DE TEXTO*/
+  background-color: #f9f9f9; /*COLOR DE FONDO*/
+  background-image: 
+    linear-gradient(transparent, transparent 24px, #e5e5e5 25px),
+    linear-gradient(90deg, transparent, transparent 24px, #e5e5e5 25px); /*CUADRICULA EN EL FONDO*/
+  background-size: 25px 25px; /*TAMAÑO DE CADA CUADRADO*/
+  background-attachment: fixed; /*EL FONDO PERMANECE FIJO AL HACER SCROLL*/
+}
+
+/*ESTILO PARA LOS ENCABEZADOS h1*/
+h1 
+{
+  font-size: 3rem; /*TAMAÑO GRANDE DEL TEXTO*/
+  font-weight: bold; /*TEXTO EN NEGRITA*/
+  text-align: center; /*CENTRADO*/
+  margin-top: 20px; /*ESPACIO SUPERIOR*/
+  color: #ff6666; /*COLOR DEL TEXTO*/
+}
+
+/*ESTILOS DEL FORMULARIO*/
+form 
+{
+  display: flex; /*FLEXBOX PARA ALINEACIÓN*/
+  flex-direction: column; /*ORIENTACIÓN VERTICAL*/
+  align-items: center; /*CENTRADO HORIZONTAL*/
+  margin: 20px 0; /*ESPACIADO VERTICAL*/
+  gap: 20px; /*ESPACIO ENTRE ELEMENTOS*/
+}
+
+/*ESTILO PARA LAS ETIQUETAS DEL FORMULARIO*/
+form .form-label 
+{
+  font-size: 1.2rem; /*TAMAÑO DE FUENTE MEDIANO*/
+  font-weight: bold; /*TEXTO EN NEGRITA*/
+  color: #ff6666; /*COLOR DEL TEXTO*/
+  align-self: flex-start; /*ALINEACIÓN A LA IZQUIERDA */
+}
+
+/*ESTILO PARA LOS CAMPOS DE ENTRADA*/
+form .form-control 
+{
+  width: 100%; /*OCUPA TODO EL ANCHO DISPONIBLE*/
+  max-width: 500px; /*ANCHO MÁXIMO*/
+  padding: 15px; /*ESPACIADO INTERNO*/
+  border: none; /*SIN BORDES*/
+  border-radius: 20px; /*BORDES REDONDEADOS*/
+  background-color: #fae5e5; /*FONDO ROSA CLARO*/
+  color: #ff6666; /*TEXTO ROSA*/
+  font-size: 1rem; /*TAMAÑO DE FUENTE*/
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*SOMBRA*/
+}
+
+/*AJUSTE DE ALTURA PARA EL ÁREA DE TEXTO*/
+form textarea.form-control 
+{
+  height: 120px; /*ALTURA DEFINIDA*/
+}
+
+/*ESTILO PARA EL CAMPO DE SELECCIÓN DE ARCHIVO*/
+form input[type="file"] 
+{
+  width: 50%; /*OCUPA LA MITAD DEL ANCHO*/
+  max-width: 300px; /*ANCHO MÁXIMO*/
+  background-color: #ffffff; /*FONDO BLANCO*/
+  border: none; /*SIN BORDES*/
+  border-radius: 20px; /*BORDES REDONDEADOS*/
+  color: #ff6666; /*TEXTO ROSA*/
+  padding: 10px; /*ESPACIADO INTERNO*/
+  font-size: 1rem; /*TAMAÑO DE FUENTE*/
+  cursor: pointer; /*CURSOR DE MANO AL PASAR SOBRE ÉL*/
+  text-align: left; /*TEXTO ALINEADO A LA IZQUIERDA*/
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*SOMBRA*/
+}
+
+/*ESTILO PARA EL BOTÓN DEL SELECTOR DE ARCHIVO*/
+form input[type="file"]::file-selector-button 
+{
+  background-color: #fae5e5; /* FONDO ROSA CLARO */
+  border: none; /* SIN BORDES */
+  border-radius: 15px; /* BORDES REDONDEADOS */
+  padding: 5px 15px; /* ESPACIADO INTERNO */
+  color: #ff6666; /* TEXTO ROSA */
+  font-weight: bold; /* TEXTO EN NEGRITA */
+  cursor: pointer; /* CURSOR DE MANO */
+}
+
+/* ESTILO AL PASAR SOBRE EL BOTÓN DEL SELECTOR */
+form input[type="file"]::file-selector-button:hover 
+{
+  background-color: #ffd1d1; /* FONDO ROSA MÁS CLARO */
+}
+
+/* ESTILO PARA EL BOTÓN DE ENVÍO */
+button[type="submit"] 
+{
+  background-color: #fae5e5; /* FONDO ROSA CLARO */
+  color: #ff6666; /* TEXTO ROSA */
+  font-weight: bold; /* TEXTO EN NEGRITA */
+  font-size: 1.3rem; /* TAMAÑO DE FUENTE */
+  padding: 15px 40px; /* ESPACIADO INTERNO */
+  border: none; /* SIN BORDES */
+  border-radius: 25px; /* BORDES REDONDEADOS */
+  cursor: pointer; /* CURSOR DE MANO */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* SOMBRA SUAVE */
+}
+
+/* CAMBIO DE FONDO AL PASAR SOBRE EL BOTÓN */
+button[type="submit"]:hover 
+{
+  background-color: #ffd1d1; /* FONDO MÁS CLARO */
+}
+
+/* CONTENEDORES PARA LOS FILTROS */
+.filtros 
+{
+  display: flex; /* FLEXBOX PARA ALINEACIÓN */
+  justify-content: center; /* CENTRADO HORIZONTAL */
+  gap: 30px; /* ESPACIO ENTRE LOS FILTROS */
+  margin-top: 30px; /* ESPACIO SUPERIOR */
+}
+
+/* ESTILO PARA CADA BOTÓN DE FILTRO */
+.filtros .filtro 
+{
+  background-color: #fae5e5; /* FONDO ROSA CLARO */
+  border-radius: 20px; /* BORDES REDONDEADOS */
+  border: none; /* SIN BORDES */
+  padding: 20px; /* ESPACIADO INTERNO */
+  width: 150px; /* ANCHO FIJO */
+  height: 10px; /* ALTURA FIJA */
+  display: flex; /* FLEXBOX PARA CENTRADO */
+  justify-content: center; /* CENTRADO HORIZONTAL */
+  align-items: center; /* CENTRADO VERTICAL */
+  text-align: center; /* TEXTO CENTRADO */
+  font-size: 1.2rem; /* TAMAÑO DE TEXTO */
+  font-weight: bold; /* TEXTO EN NEGRITA */
+  color: #ff6666; /* TEXTO ROSA */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* SOMBRA SUAVE */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* TRANSICIÓN SUAVE */
+}
+
+/* CAMBIO DE FONDO Y ESCALA AL PASAR SOBRE LOS FILTROS */
+.filtros .filtro:hover 
+{
+  background-color: #ffffff; /* FONDO BLANCO */
+  transform: scale(1); /* AUMENTO LIGERO DE TAMAÑO */
+}
+
+/* ESTILO DEL CONTENEDOR PRINCIPAL */
+.container 
+{
+  max-width: 800px; /* ANCHO MÁXIMO */
+  margin: 0 auto; /* CENTRADO HORIZONTAL */
+  padding: 20px; /* ESPACIADO INTERNO */
+  background: #ffd1d1; /* FONDO ROSA CLARO */
+  border-radius: 25px; /* BORDES REDONDEADOS */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* SOMBRA SUAVE */
+}
